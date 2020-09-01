@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  top: 200px;
+  flex-direction: column;
+  background: url("img/hero.jpg") no-repeat;
+  background-size: cover;
+  padding: 3rem;
+  height: 100vh;
+  color: white;
+  justify-content: center;
+  text-align: center;
+}
+header p {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+header a {
+  position: relative;
+  top: 20px;
+  text-decoration: none;
+  background: rgb(31, 126, 214);
+  width: 170px;
+  padding: 1rem;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 50px;
+}
+
+.portfolio-heading {
+  padding: 2rem 0;
+  text-align: center;
+}
+.portfolio-heading h1 {
+  font-size: 3rem;
+  display: inline;
+  position: relative;
+  justify-content: center;
+   border-radius: 60px;
+}
+
+.portfolio-flex {
+  text-align: center;
+  display: flex;
+  height: auto;
+}
+.portfolio-flex img {
+  width: 100%;
+  border-radius: 20px;
+}
+.portfolio-flex .left-box,
+.portfolio-flex .right-box {
+  width: 50%;
+}
+.portfolio-flex .right-box,
+.portfolio-flex .left-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem;
+}
+
+footer {
+  margin-top: 2rem;
+  background: rgb(31, 126, 214);
+  padding: 1rem;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer a {
+  background: rgb(4, 85, 160);
+  text-decoration: none;
+  padding: 1rem;
+  color: #fff;
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(4, 85, 160);
+  }
+}
